@@ -7,7 +7,7 @@ class List
 	int maxSize;
 	int currentSize;
 public:
-	void setArr();
+	void setArr(int *ar,int ma,int cur);
 	int* getArr();
 	int getMaxSize();
 	int getCurrentSize();

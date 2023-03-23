@@ -23,19 +23,13 @@ List::List(const List& obj)
 		arr[i] = obj.arr[i];
 	}
 }
-void List::setArr()
+void List::setArr(int* ar, int ma, int cur)
 {
-	int x;
-	cout << "Enter the Size for list : "; cin >> x;
-	maxSize =x;
-	currentSize = 0;
+	maxSize =ma;
+	currentSize = cur;
 	arr = new int[maxSize];
-	for (int i = 0; i < maxSize; i++)
+	for (int i = 0; i < currentSize; i++)
 	{
-		if (i != maxSize - 1)
-		{
-			cout << "Do you want to enter another element \nY/y if yes otherwise N/n : ";
-		}
 		arr[i] = ar[i];
 	}
 }
